@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<title>IOTA FAQ (Unofficial)</title>
+</head>
+<body>
+<header>
+	<h1><img src="https://i.imgur.com/kKjK72f.png" alt="logo" height="75" width="80" style="vertical-align: middle;"/>
+	<span style="vertical-align: middle; font-size: 3.2rem;">IOTA FAQ</span></h1>
+</header>
+<section class="cd-faq">
+	<ul class="cd-faq-categories">
+		<li><a class="selected" href="#basics">Basics</a></li>
+		<li><a href="#wallets">Wallets</a></li>
+		<li><a href="#community">Community</a></li>
+		<li><a href="#developers">Developers</a></li>
+		<li><a href="#foundation">Foundation</a></li>
+		<li><a href="#markets">Markets</a></li>
+	</ul> <!-- cd-faq-categories -->
+
+	<div class="cd-faq-items">
+		<ul id="basics" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Basics</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">My transaction is 'pending', and it has been more than 1 hour. How do I get it to become 'confirmed'?</a>
+				<div class="cd-faq-content">
+					<p><p>These instructions apply to the <a href="https://github.com/iotaledger/wallet/releases">GUI Desktop wallet</a>. Other wallet may require different steps to be followed.</p>
+					<br>
+					<p>1. Click 'HISTORY'.</p>
+					<br>
+					<p>2. Click 'Show Bundle' on the 'pending' transaction.</p>
+					<br>
+					<p>3. Click 'REATTACH'.</p>
+					<br>
+					<p>4. Click 'REBROADCAST'. (optional, usually not required)</p>
+					<br>
+					<p>5. Wait for 1 hour.</p>
+					<br>
+					<p>6. If still 'pending', repeat steps 1-5 once more.</p>
+					<br>
+					<p>IOTA's current Tangle implementation (IOTA is in constant development, so this may change in the future) has a confirmation rate that is ~66% at first attempt.</p>
+					<br>
+					<p>So, if a transaction does not confirm within 1 hour, it is necessary to "reattach" (also known as "replay") the transaction one time. Doing so one time increases probability of confirmation from ~66% to ~89%.</p>
+					<br>
+					<p>Repeating the process a second time increases the probability from ~89% to ~99.9%.</p>
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+		</ul> <!-- cd-faq-group -->
+
+
+		<ul id="wallets" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Wallets</h2></li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">I want to support IOTA. How can I set up a full node?</a>
+				<div class="cd-faq-content">
+					<p> <p>Complete the following steps:</p>
+					<br>
+
+					<p>1. Download the full node software: either <a href="https://github.com/iotaledger/wallet/releases">GUI</a>, or <a href="https://github.com/iotaledger/iri/releases">headless CLI</a> for lower system requirements and better performance.</p>
+					<br>					
+					<p>2. Get a <a href="http://www.iotasupport.com/staticip.shtml">static IP</a> for your node.</p>
+					<br>
+					<p>3. Join the network by <a href="http://www.iotasupport.com/gui-addneighbors.shtml">adding 7-9 neighbors</a>.</p>
+					<br>
+					<p>Try to keep your full node running 24/7 for best results! Either host it on your main computer, a separate computer in your direct possession, or on a suitable hosted VPS.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">I don't want to set up an IOTA full node. How do I set up a basic IOTA wallet (light node) to send and receive payments?</a>
+				<div class="cd-faq-content">
+					<p>There are various options:
+					<br>
+					<br>
+					<p>* Download the <a href="https://github.com/iotaledger/wallet/releases">GUI Desktop wallet</a>, and set up <a href="http://www.iotasupport.com/knowledgebase_lightwallet.shtml">accordingly</a>. This is created by the IOTA Foundation.</p>
+					<br>
+					<p>* Download a Mobile wallet for your smartphone: <a href="https://iota.tools/wallet">iOS</a> is currently in beta testing, while <a href="https://play.google.com/store/apps/details?id=org.iota.wallet">Android</a> is available. These are created by IOTA's community.</p>
+					<br>
+					<p>* Use a <a href="https://iota-wallet.org">Web wallet</a>, accessible via a WebGL2-enabled Internet browser, such as Google Chrome. This is created by IOTA's community.</p>
+					<br>
+					<p>More options may become available, as time goes on.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+		</ul> <!-- cd-faq-group -->
+
+
+		<ul id="community" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Community</h2></li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Where can I participate in IOTA's community?</a>
+				<div class="cd-faq-content">
+					<p>The general community is located in various places. These include: Slack (get an <a href="http://slack.iota.org">invite</a>), <a href="https://reddit.com/r/IOTA">Reddit</a>, <a href="http://forum.iota.org">Forum</a>, <a href="https://bitcointalk.org/index.php?topic=1216479.0">BitcoinTalk</a>, <a href="https://telegram.me/iotatangle">Telegram</a>, and <a href="https://area51.stackexchange.com/proposals/110603/iota">StackExchange</a>.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+		</ul> <!-- cd-faq-group -->
+
+
+		<ul id="developers" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Developers</h2></li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Where can I find a list of developers working on IOTA?</a>
+				<div class="cd-faq-content">
+					<p>IOTA is an open-source project. Anyone can contribute to IOTA, and help develop the protocol. Visit our <a href="https://github.com/iotaledger">GitHub page</a>, and see #developers channel in the IOTA Slack.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+		</ul> <!-- cd-faq-group -->
+
+
+		<ul id="foundation" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Foundation</h2></li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Where can I learn about the initial history of the non-profit IOTA Foundation?</a>
+				<div class="cd-faq-content">
+					<p>This <a href="https://forum.iota.org/t/iota-foundation-announcement/174">forum post</a> marks its introduction.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Where can I find a list of current members of the IOTA Foundation?</a>
+				<div class="cd-faq-content">
+					<p>Information is available <a href="https://en.wikipedia.org/wiki/IOTA_(Distributed_Ledger_Technology)#IOTA_Foundation">here</a>.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+		</ul> <!-- cd-faq-group -->
+
+
+		<ul id="markets" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Markets</h2></li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Where can I find IOTA's price history?</a>
+				<div class="cd-faq-content">
+					<p>IOTA became traded on a semi-automated trusted escrow-based exchange (YDX) in 2017. In 2016, it was limited to OTC trading on the BitcoinTalk forum, and such. A history of price, starting from the YDX era, can be found <a href="http://iotaprice.com">here</a>.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+		</ul> <!-- cd-faq-group -->
+
+
+	</div> <!-- cd-faq-items -->
+	<a href="#0" class="cd-close-panel">Close</a>
+</section> <!-- cd-faq -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+
+<div id="footer">
+    <hr>
+    <br>
+    <h3 class="contact">Have content suggestions?</h3>
+    <br>
+    <h3 class="contact">Send a message via <a href="https://reddit.com/message/compose/?to=eragmus&subject=IOTA FAQs - Content Suggestion">Reddit</a>.</h3>
+  	<br><br>
+</div>
+
+</html>
